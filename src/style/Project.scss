@@ -1,0 +1,54 @@
+@import'color';
+
+.project{
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw;
+    padding-top:10vw ;
+    background-color: $bg;
+
+    h1{
+        font-size: 7vw;
+        color: $white;
+
+        span{
+            font-size: 5vw;
+            color: $blue;
+        }
+    }
+
+
+    .project-section{
+        display: flex;
+        justify-content: space-between;
+        background-color: $bg;
+        padding-top:5vw;
+
+        div{
+            display: flex;
+            flex-direction: column;
+
+            flex-basis: 48%;
+            overflow: hidden;
+            border-radius: 2vw;
+            a{
+
+                img{
+                    height: 90%;
+                    width: 100%;
+                    object-fit: cover;
+    
+                }
+    
+            }
+
+            p {
+                color:$white;
+                padding: 1vw;
+            }
+
+        }
+
+        
+    }
+}

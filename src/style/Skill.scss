@@ -1,0 +1,56 @@
+@import 'color';
+
+.skill{
+
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw;
+    padding-top: 10vw;
+    background-color: $bg;
+    
+    h1{
+        font-size: 4vw;
+        line-height: 1.4;
+        
+        span{
+            font-size: 6vw;
+            color:$blue;
+        }
+    }
+    
+    div{
+        
+        h2 {
+            font-size: 3vw;
+            margin: 2vw 0;
+        }
+
+        .box{
+            width: 100%;
+            height: 20vmin;
+            background-color: #222;
+            border-radius: 2vw;
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            padding: 2vw;
+            
+            img{
+                mix-blend-mode: lighten;
+                height: 10vmin;
+                transition: all 0.3s;
+
+                &:hover{
+                    scale:1.1;
+                    rotate: 10deg;
+                }
+            }
+        }
+        
+    }
+    
+
+}
+.skill::-webkit-scrollbar {
+    display: none;
+}

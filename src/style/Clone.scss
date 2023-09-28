@@ -1,0 +1,137 @@
+@import 'color';
+.clone{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg;
+
+    .heading{
+        text-align: center;
+        margin-top: 5vw; 
+        
+        h1{
+            font-size: 5vw;
+        }
+
+        p{
+            font-size: 2vw;
+            color: $white2;
+        }
+    }
+
+    .links{
+        margin-top: 3vw;
+        width: 20vw;
+        height: 4vw;
+        background-color: $white2;
+        border-radius: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        div{
+            transition: all ease .2s;
+        } 
+        div:hover{
+            scale: 1.15;
+        } 
+    }
+
+    h3{
+        padding: 3vw;
+        color: $blue;
+        font-size: 5vw;
+    }
+
+
+    .parallax{
+        height: 40vh;
+        width: 100%;
+        overflow-y: auto;
+        display: flex;
+        align-items: center;
+
+        &::-webkit-scrollbar {
+            display: none;
+          }
+
+        img{
+            height: 75%;
+            border-radius: 1vw;
+            margin: 0 1.5vw;
+            transition: all ease 0.3s;
+            
+            &:hover{
+                scale:1.1;
+                transform: translateY(-10px)         
+            }
+        }
+    }
+
+    .scroll{
+        display: flex;
+        align-items: center;
+       gap: 1vw;
+       animation-name: glowup;
+       animation-duration: .5s;
+       animation-timing-function: linear;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+    }
+
+    @keyframes glowup {
+
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        } 
+    }
+
+
+    .what-i-do{
+        margin-top: 4vw;
+        h1{
+            color: $blue;
+            font-size: 2.5rem;
+        }
+        p{
+            width: 60%;
+            font-size: 1.5rem;
+            padding: 4vw 0;
+            word-spacing: .5vw;
+            line-height: 1.5;
+            padding-left: 5vw;
+        }
+
+    }
+
+    .con-div{
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            font-size: 4vw;
+        }
+        p{
+            font-size: 2vw;
+            color:$blue;
+        }
+
+        button{
+            padding: 1vw 2vw;
+            margin: 2vw;
+            background-color: $blue;
+            font-size: 1.2vw;
+            font-weight: 600;
+            border: none;
+            border-radius: .6vw;
+        }
+    }
+}   
+   

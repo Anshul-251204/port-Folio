@@ -1,0 +1,52 @@
+@import 'color';
+
+nav{
+    width: 100%;
+    display: flex;
+    padding: 2vw 4vw;
+    justify-content: space-between;
+    position: fixed;
+    background-color: $bg;
+    h1{
+        font-size: 2vw;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: all ease 0.2s;
+        &:hover{
+            scale:1.1;
+        }
+    }
+    div{
+        display: flex;
+        gap: 3vw;
+        align-items: center;
+
+        a{
+            position: relative;
+            font-size: 1.2vw;
+            padding: .5vw;
+            
+            &:after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 0%;
+                background-color: $blue;
+                transition: all ease 0.4s;
+            }
+
+            &:hover::after{
+                color: $blue;
+                width: 100%;
+            }
+        }
+
+        button {
+            border: none;
+        }
+
+       
+    }
+}
